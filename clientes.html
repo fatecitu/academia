@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Fatec</title>
+    <!-- CSS -->
+    <link href="css/estilo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header> <!-- área de cabeçalho -->
+        <nav> <!-- área de navegação -->
+            <ul> <!-- unordered list - lista não ordenada -->
+                <li><a href="index.html">Início</a></li> <!-- list item - itens da lista -->
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Aulas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Cadastro de Clientes</h1>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="nascimento">Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required/>
+
+        <label for="mensalidade">Mensalidade:</label>
+        <input type="number" id="mensalidade" name="mensalidade" required
+               min="0" max="9999" step="0.01" />
+
+        <label for="estadocivil">Estado Civil:</label>
+        <select name="estadocivil" required>
+            <option value="" selected>Selecione...</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="viuvo">Viúvo</option>
+        </select>
+        <label for="sexo">Sexo:</label>
+        
+        <div class="opcoes">
+            <input type="radio" id="masculino" name="sexo" value="Masculino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <button type="submit" class="botao">💾 Salvar</button>
+    </form>
+  
+</body>
+
+</html>

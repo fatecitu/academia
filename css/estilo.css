@@ -1,0 +1,77 @@
+/* Estilo CSS do projeto */
+header{background-color: #6FAAEA;
+    color: white;}
+nav{display: flex; /* exibe de forma 'flexível' os dados */
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;}
+nav ul {list-style: none; /* remove a 'bolinha' */
+    margin: 0;
+    padding: 0;}
+nav ul li{
+    display: inline-block; /* coloca tudo na mesma linha */
+    margin: 8px;}    
+nav ul li a{
+    text-decoration: none; /* remove o sublinhado do link */
+    color: white;
+    font-weight: bold; /* negrito */
+    font-size: 14pt;
+}  
+nav ul li a:hover {
+    color: #000;
+    background-color: #CCC;
+    padding: 16px;
+}  
+
+.imagem-svg{
+    margin-top: 32px;
+    display: block; /* uma abaixo da outra */    
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 16px;
+    background-image: linear-gradient(to right, #007BFF, #FFFFFF);
+}
+form{
+    max-width: 500px; /* tamanho máximo */
+    margin: 32px auto; /* auto centraliza o conteúdo */
+    border: 1px solid #000;
+    border-radius: 16px; /* cantos arredondados */
+    box-shadow: 0 0 32px rgba(0,0,0,0.5); /* cria um sombreamento */
+    background: rgba(255,255,255,0.80); /* o a é de alpha e indica transparênc.*/
+    display: flex; /* organiza os elementos de forma flexível */
+    flex-direction: column; /* os elementos serão exibidos em colunas */
+    padding: 16px;
+}
+input{
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.opcoes{
+    flex-direction: row;
+}
+label{
+    margin-top: 16px;
+}
+select{
+    padding: 8px;
+    border-radius: 8px;    
+}
+.botao{
+    padding: 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    color: white;
+    background-color: #007BFF;
+    cursor: pointer;
+    margin-top: 24px;
+    font-size: 14pt;
+}
+h1{
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000;
+}
