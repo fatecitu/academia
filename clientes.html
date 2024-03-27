@@ -32,7 +32,7 @@
                min="0" max="9999" step="0.01" />
 
         <label for="estadocivil">Estado Civil:</label>
-        <select name="estadocivil" required>
+        <select name="estadocivil" id="estadocivil" required>
             <option value="" selected>Selecione...</option>
             <option value="solteiro">Solteiro</option>
             <option value="casado">Casado</option>
@@ -47,9 +47,24 @@
             <label for="feminino">Feminino</label>
         </div>
 
-        <button type="submit" class="botao">💾 Salvar</button>
+        <button type="submit" class="botao" id="salvar">💾 Salvar</button>
     </form>
-  
+    <!-- Tabela de dados -->
+    <table border="1">
+        <caption>Relação de Clientes</caption>
+        <thead>
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>Mensalidade</th>
+            <th>Estado Civil</th>
+            <th>Sexo</th>
+        </thead>
+        <tbody id="listaClientes">
+            
+        </tbody>
+    </table>
+  <!-- Carregando o JS do projeto -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
