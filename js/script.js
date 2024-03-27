@@ -1,6 +1,6 @@
 class Cliente {
     constructor(){ //é chamado toda vez que a classe é instanciada
-        this.clientes = localStorage.getItem('tbClientes')       
+        this.clientes = JSON.parse(localStorage.getItem('tbClientes')) || []       
     }
 
     static fields = ['nome','nascimento','mensalidade','estadocivil','sexo']
