@@ -9,6 +9,7 @@ class Cliente {
         this.clientes.push(cliente) //o push adiciona no fim do array
         localStorage.setItem('tbClientes', JSON.stringify(this.clientes))
         alert('Cliente salvo com sucesso ✔')
+        this.lista() // atualiza a listagem
         //limpando os campos
         document.getElementById('nome').value = ''
         document.getElementById('nascimento').value = ''
@@ -21,7 +22,7 @@ class Cliente {
             return `
             <tr>
                <td>${cliente.nome}</td>
-               <td>${cliente.nascimento}</td>
+               <td>${new Date(cliente.nascimento).toLocaleDateString()}</td>
                <td>${cliente.mensalidade}</td>
                <td>${cliente.estadocivil}</td>
                <td>${cliente.sexo}</td>
@@ -58,3 +59,6 @@ document.getElementById('salvar').addEventListener('click', (event) => {
 window.onload = function(){
     cliente.lista()
 }
+
+
+// https://divtable.com/table-styler/
